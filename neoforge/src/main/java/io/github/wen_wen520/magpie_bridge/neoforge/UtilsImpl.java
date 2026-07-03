@@ -1,7 +1,7 @@
-package io.github.wen_wen520.magpie_bridge.forge;
+package io.github.wen_wen520.magpie_bridge.neoforge;
 
 import java.nio.file.Path;
-import net.minecraftforge.fml.loading.FMLPaths;
+import net.neoforged.fml.loading.FMLPaths;
 
 public final class UtilsImpl {
 	public static Path getGameDir() {

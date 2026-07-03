@@ -1,7 +1,7 @@
 package io.github.wen_wen520.magpie_bridge;
 
 import java.io.IOException;
-import net.minecraft.Util;
+import net.minecraft.util.Util;
 
 public final class Notifier {
 

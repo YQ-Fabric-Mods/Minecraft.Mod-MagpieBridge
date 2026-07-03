@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import org.jetbrains.annotations.NotNull;
-import net.minecraft.Util;
+import net.minecraft.util.Util;
 
 public final class ResourceManager {
 

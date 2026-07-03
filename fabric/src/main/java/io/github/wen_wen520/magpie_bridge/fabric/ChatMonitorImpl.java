@@ -5,7 +5,7 @@ import io.github.wen_wen520.magpie_bridge.*;
 
 public final class ChatMonitorImpl {
 
-	private static void init() {
+	public static void init() {
 		onClientChatReceived();
 		Main.LOGGER.info("[Fabric] ChatMonitorImpl initialized.");
 	}
@@ -19,7 +19,7 @@ public final class ChatMonitorImpl {
 				return;
 			}
 
-			String rawName = sender.getName();
+			String rawName = sender.name();
 			String rawBody = message.getString();
 
 			if (rawName.isEmpty()){
@@ -52,12 +52,8 @@ public final class ChatMonitorImpl {
 			}
 
 			if (Utils.isNotificationOn() && Main.Settings.include_system) {
-				return;
+				MessagePipeline.ProcessSystemMessage(message);
 			}
-
-			String rawText = message.getString();
-			MessagePipeline.ProcessSystemMessage(rawText);
-
 		});
 	}
 }

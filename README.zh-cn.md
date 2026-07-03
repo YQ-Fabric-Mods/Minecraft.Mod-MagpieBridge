@@ -46,9 +46,10 @@ Magpie Bridge 是一个轻量级的 Minecraft 模组，可以将你的游戏内�
 
 架构: 64位\
 系统: Windows 10 版本 15063.0 或更高\
-Java: 21\
-Minecraft: 1.21 - 1.21.8\
-Fabric: 0.16.10 或更高
+Java: 25\
+Minecraft: 26.2\
+Fabric Loader: 0.19.3 或更高\
+NeoForge: 26.2.0 或更高
 
 ## ✅ 安装
 

@@ -1,17 +1,17 @@
-package io.github.wen_wen520.magpie_bridge.forge;
+package io.github.wen_wen520.magpie_bridge.neoforge;
 
 import java.util.UUID;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ClientChatReceivedEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ClientChatReceivedEvent;
 import io.github.wen_wen520.magpie_bridge.*;
 
-@Mod.EventBusSubscriber(modid = "magpie_bridge", bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
+@EventBusSubscriber(modid = Main.MOD_ID, value = Dist.CLIENT)
 public class ChatMonitorImpl {
 
 	public static void init() {
-		Main.LOGGER.info("[Forge] ChatMonitorImpl initialized.");
+		Main.LOGGER.info("[NeoForge] ChatMonitorImpl initialized.");
 	}
 
 	@SubscribeEvent
@@ -61,8 +61,7 @@ public class ChatMonitorImpl {
 	// Received System Message
 	private static void handleSystemChat(ClientChatReceivedEvent.System event) {
 
-		String rawText = event.getMessage().getString();
-		MessagePipeline.ProcessSystemMessage(rawText);
+		MessagePipeline.ProcessSystemMessage(event.getMessage());
 
 	}
 }

@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[46,)"
+loaderVersion = "[1,)"
 issueTrackerURL = "https://github.com/wen-wen520/Minecraft.Mod-MagpieBridge/issues"
 license = "All Rights Reserved"
 
@@ -8,21 +8,29 @@ modId = "magpie_bridge"
 version = "${version}"
 displayName = "Magpie Bridge"
 authors = "wen_wen520"
+displayTest = "IGNORE_ALL_VERSION"
 description = '''
 A bridge between in game chat and system notification
 '''
 logoFile = "assets/magpie_bridge/icon.png"
 
 [[dependencies.magpie_bridge]]
-modId = "forge"
+modId = "minecraft"
 mandatory = true
-versionRange = "[46,)"
+versionRange = "[26.2,26.3)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.magpie_bridge]]
-modId = "minecraft"
+modId = "neoforge"
 mandatory = true
-versionRange = "[1.20,)"
+versionRange = "[26.2.0.0-beta,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.magpie_bridge]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[26.2.155,)"
 ordering = "NONE"
 side = "BOTH"

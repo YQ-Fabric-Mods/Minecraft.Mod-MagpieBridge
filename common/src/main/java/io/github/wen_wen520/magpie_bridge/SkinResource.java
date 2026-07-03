@@ -96,7 +96,7 @@ public final class SkinResource {
 		// 1. Try local cache
 		PlayerInfo info = Minecraft.getInstance().getConnection().getPlayerInfo(uuid);
 		if (info != null) {
-			return info.getProfile().getName();
+			return info.getProfile().name();
 		}
 
 		// 2. Fallback to Mojang API
@@ -129,8 +129,8 @@ public final class SkinResource {
 		}
 
 		for (PlayerInfo info : Minecraft.getInstance().getConnection().getOnlinePlayers()) {
-			if (info.getProfile().getName().equalsIgnoreCase(name)) {
-				return info.getProfile().getId();
+			if (info.getProfile().name().equalsIgnoreCase(name)) {
+				return info.getProfile().id();
 			}
 		}
 

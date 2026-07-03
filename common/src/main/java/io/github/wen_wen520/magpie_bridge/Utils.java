@@ -22,7 +22,7 @@ public final class Utils {
 	public static String getPlayerName() {
 		LocalPlayer player = Minecraft.getInstance().player;
 		if (player != null) {
-			return player.getGameProfile().getName();
+			return player.getGameProfile().name();
 		}
 		return "Unknown";
 	}

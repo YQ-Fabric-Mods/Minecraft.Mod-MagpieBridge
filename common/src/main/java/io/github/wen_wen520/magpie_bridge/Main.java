@@ -3,7 +3,7 @@ package io.github.wen_wen520.magpie_bridge;
 import java.nio.file.Path;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import net.minecraft.Util;
+import net.minecraft.util.Util;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 
