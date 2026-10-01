@@ -1,6 +1,8 @@
 plugins {
-	id 'architectury-plugin' version '3.5.169'
-	id 'dev.architectury.loom' version '1.17.487' apply false
+	// 3.5.170 includes Transformer 5.2.92, which can read the Java 27
+	// multi-release classes in 26.3 libraries while we target Java 25.
+	id 'architectury-plugin' version '3.5.170'
+	id 'dev.architectury.loom' version '1.17.491' apply false
 	id 'com.gradleup.shadow' version '9.4.3' apply false
 }
 

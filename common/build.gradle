@@ -2,6 +2,12 @@ architectury {
 	common(rootProject.enabled_platforms.toString().split(','))
 }
 
+// Architectury's transformer requests fabric-loader:+ by default. Keep its
+// bytecode tooling on the same Loader version used to compile this project.
+configurations.matching { it.name == 'architecturyTransformerClasspath' }.configureEach {
+	resolutionStrategy.force "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+}
+
 dependencies {
 	// We depend on Fabric Loader here to use the Fabric @Environment annotations,
 	// which get remapped to the correct annotations on each platform.

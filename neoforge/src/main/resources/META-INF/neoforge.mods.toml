@@ -17,20 +17,20 @@ logoFile = "assets/magpie_bridge/icon.png"
 [[dependencies.magpie_bridge]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[26.2,26.3)"
+versionRange = "[26.3,26.4)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.magpie_bridge]]
 modId = "neoforge"
 mandatory = true
-versionRange = "[26.2.0.0-beta,)"
+versionRange = "[26.3.0.39-beta,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.magpie_bridge]]
 modId = "cloth_config"
 mandatory = true
-versionRange = "[26.2.155,)"
+versionRange = "[26.3.159,)"
 ordering = "NONE"
 side = "BOTH"
