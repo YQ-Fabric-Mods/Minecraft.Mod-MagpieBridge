@@ -30,11 +30,13 @@ public final class Main {
 		ResourceManager.init();
 		ChatMonitor.init();
 
-		GeneralMessage finish_setup = GeneralMessage.builder()
-				.title("Magpie Bridge Mod")
-				.body("Magpie Bridge Notification setup complete!")
-				.build();
-		Notifier.send(finish_setup);
+		if (Settings.show_startup_notification) {
+			GeneralMessage finish_setup = GeneralMessage.builder()
+					.title("Magpie Bridge Mod")
+					.body("Magpie Bridge Notification setup complete!")
+					.build();
+			Notifier.send(finish_setup);
+		}
 
 		LOGGER.info("MagpieBridge has been loaded!");
 	}

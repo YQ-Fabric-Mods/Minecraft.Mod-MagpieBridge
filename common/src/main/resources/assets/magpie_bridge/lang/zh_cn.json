@@ -3,6 +3,7 @@
 	"text.autoconfig.magpie_bridge/main_settings.category.hypixel": "Hypixel 联动",
 	"text.autoconfig.magpie_bridge/main_settings.title": "鹊桥通知 设置",
 	"text.autoconfig.magpie_bridge/main_settings.option.main_toggle": "总开关 是否启用此模组",
+	"text.autoconfig.magpie_bridge/main_settings.option.show_startup_notification": "游戏启动时显示测试通知",
 	"text.autoconfig.magpie_bridge/main_settings.option.only_others": "仅推送其他玩家的消息",
 	"text.autoconfig.magpie_bridge/main_settings.option.only_background": "仅处于后台时推送通知",
 	"text.autoconfig.magpie_bridge/main_settings.option.include_system": "包含系统消息",

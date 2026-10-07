@@ -10,6 +10,9 @@ public class MainSettings implements ConfigData {
 	public boolean main_toggle = true;
 
 	@ConfigEntry.Category("general")
+	public boolean show_startup_notification = true;
+
+	@ConfigEntry.Category("general")
 	public boolean only_others = false;
 
 	@ConfigEntry.Category("general")
