@@ -19,7 +19,8 @@ public final class ChatMonitorImpl {
 				return;
 			}
 
-			String rawName = sender.name();
+			// Profileless chat (e.g. server /say) has no GameProfile.
+			String rawName = sender != null ? sender.name() : params.name().getString();
 			String rawBody = message.getString();
 
 			if (rawName.isEmpty()){
